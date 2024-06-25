@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>David Olaniyan</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./styles/main.css">
+        <link rel="stylesheet" href="./styles/theme-switcher.css">
+    </head>
+    <body>
+        <div id="container--main">
+            <a href="index.html">&#x2190; Go Back</a>
+            <h1>Building Pokemon in Unity</h1>
+
+            <ul>
+                <li><a href="#" target="_blank">Live Demo</a></li>
+                <li><a href="https://github.com/davidatrus/Pokemon_Game" target="_blank">Source code</a></li>
+            </ul>
+            <p>Recreating pokemon from scratch using unity!</p>
+            
+            <p> Built with Unity’s Game engine </p>
+            <ul>   
+            <li>Implemented inventory system, catching system, battle system, Pokémon party system all while utilizing scriptable objects in Unity</li>
+                <li>Implemented quest system </li>
+                <li>Implemented buy/sell items system</li>
+                <li>Implemented Sound system.</li>
+                <li>Implemented Save & Load system.</li> 
+                <li>Used a state machine to handle logic for different game states, made the statemachine a namespace so I can call in their functions across different files. Enter, Execute and Exit functions that will handle logic for entering a state, exiting a state and executing a state. In the State class theres logic for Pushing and Popping. </li>
+                <li>Currently implementing pokemon box functionality</li>
+            </ul>  
+        </div>
+        <div id="theme-switcher">
+            <div class="theme" id="theme-dark" data-theme="dark"></div>
+            <div class="theme" id="theme-light" data-theme="light"></div>
+        </div>
+        <script src="js/theme-switcher.js"></script>
+    </body>
+</body>
+</html>
