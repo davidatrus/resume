@@ -22,9 +22,6 @@
     --mainBorderColor:rgb(218, 218, 218);
     --mainBgColor:rgb(249, 250,251);
 }
-
-
-
 *{
     font-family: 'Readex Pro';
     line-height: 1.5em;
@@ -78,12 +75,13 @@ li{
     line-height: 1em;
 }
 
-#profile-pic{
-    width: 375px;
-    height: 200px;
-    object-fit: cover;
+#profile-pic {
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
-}
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+  }  
 
 #email{
     color: var(--mainTextColor);
@@ -96,42 +94,78 @@ li{
     flex-wrap: wrap;
 }
 
-#socials--list a{
+#socials--list a {
     font-weight: 300;
     color: var(--secondaryTextColor);
     font-size: 0.9em;
-    transition: 0.3s;
-}
-
-#socials--list a:hover{
-    font-weight: 100;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+  }
+  
+  #socials--list a:hover {
+    font-weight: 400;
     color: var(--mainLinkColor);
-    font-size: 0.9em;
-}
+    transform: scale(1.03);
+  }
+  
 
 #qualifications--list{
     list-style: none;
+    opacity: 0;
+    animation: fadeInOnly 0.6s ease-out forwards;
+    animation-delay: 0.4s;
 }
 
-#wrapper--techstack__items{
+#wrapper--techstack__items {
     display: flex;
     flex-wrap: wrap;
     gap: 1em;
-    font-size: 0.9em;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
-.card--techstack{
+  
+  .card--techstack {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     border: 1px solid var(--mainBorderColor);
     border-radius: 5px;
-    padding: 0.5em 1em;
-    align-items: center;
-}
+    padding: 0.6em 0.9em;
+    background-color: transparent;
+    transition: all 0.25s ease-in-out;
+    flex: 1 1 auto;
+    min-width: 220px;
+    max-width: 100%;
+  }
+  
+.card--techstack:hover {
+    transform: scale(1.03);
+    background-color: rgba(255, 255, 255, 0.05); 
+    border-color: var(--mainLinkColor);
+  }
+  [data-theme="light"] .card--techstack:hover {
+    background-color: rgba(0, 0, 0, 0.03); /* clean hover for light mode */
+  }
+  
+  [data-theme="dark"] .card--techstack:hover {
+    background-color: rgba(255, 255, 255, 0.05); /* clean hover for dark mode */
+  }
+  .card--techstack img.tech-icon.dark-mode-visible {
+    background-color: rgba(255, 255, 255, 0.08); /* soft light glow */
+    padding: 3px;
+    border-radius: 5px;
+  }
 
 .card--project{
     padding-top: 1em;
     padding-bottom: 1em;
     border-top: 1px solid var(--mainBorderColor);
-    white-space: nowrap;
+    white-space: normal;
+    word-wrap: break-word;
+    opacity: 0;
+    animation: fadeInOnly 0.6s ease-out forwards;
+    animation-delay: 1.2s;
 }
 
 .card--project a{
@@ -145,13 +179,27 @@ li{
     color: rgb(30, 190,214);
 
 }
+.card--project a:hover {
+    color: var(--mainLinkColor);
+    transform: scale(1.03);
+    transition: transform 0.2s ease-in-out;
+  }
+  
 
 .card--work-history{
     border-left: 1px solid var(--mainBorderColor);
     margin-top: 3em;
     margin-bottom: 3em;
     padding-left: 2em;
+      /* Add animation styles */
+    opacity: 0;
+    animation: fadeInOnly 0.6s ease-out forwards;
+    animation-delay: 0.8s;
 }
+.card--work-history:hover {
+    transform: scale(1.01);
+    background-color: rgba(255, 255, 255, 0.03); /* Light pop effect */
+  }
 
 .line-break{
     background-color: var(--mainBorderColor);
@@ -180,11 +228,17 @@ li{
 
     #wrapper--hero{
         flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
     .card--work-history{
         border-left: none;
         padding-left: 0;
+              /* Add animation styles */
+        opacity: 0;
+        animation: fadeInOnly 0.6s ease-out forwards;
+        animation-delay: 0.8s;
     }
 }
 .gg-pokemon {
@@ -200,3 +254,175 @@ li{
         inset 0 0 0 2px;
     border-radius: 100%
 }
+#contact-section {
+    text-align: center;
+  }
+  
+  #contact-section a {
+    display: inline-block;
+    margin: 0.5em;
+  }
+  #work-history-wrapper,
+.card--education {
+  border-bottom: 1px solid var(--mainBorderColor);
+  padding-bottom: 2em;
+  margin-bottom: 2em;
+  opacity: 0;
+  animation: fadeInOnly 0.6s ease-out forwards;
+  animation-delay: 1s;
+}
+.card--techstack.centered {
+    justify-content: center;
+  }
+  /* ANIMATION: Fade In Up for section titles */
+@keyframes fadeInSlideUp {
+    from {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+@keyframes fadeInOnly {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  /* BASE STYLING for all section headings */
+  .section--heading {
+    display: inline-block;
+    opacity: 0;
+    transform: translate3d(0, 8px, 0); /* Initial animation state */
+    animation: fadeInOnly 0.6s ease-out forwards;
+    transition: transform 0.25s ease, color 0.25s ease;
+    will-change: transform, color;
+  }
+  
+  .section--heading:hover {
+    transform: translate3d(0, -2px, 0) scale(1.02); /* Hover override */
+    color: var(--mainLinkColor);
+  }
+  
+  
+  /* STAGGERED DELAYS for each heading */
+  .section--heading.section-skills-qualifications { animation-delay: 0.2s; }
+  .section--heading.section-tech-stack { animation-delay: 0.4s; }
+  .section--heading.section-work-history { animation-delay: 0.6s; }
+  .section--heading.section-education { animation-delay: 0.8s; }
+  .section--heading.section-projects { animation-delay: 1s; }
+  .section--heading.section-contact-me { animation-delay: 1.2s; }
+  @keyframes fadeInContent {
+    from {
+      opacity: 0;
+      transform: translateY(6px);
+      visibility: hidden;
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+      visibility: visible;
+    }
+  }
+  
+  .fade-in-content {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(6px);
+    animation: fadeInContent 0.5s ease-out forwards;
+    will-change: opacity, transform;
+  }
+  
+  /* Optional stagger variants */
+  .fade-in-content.delay-1 { animation-delay: 0.3s; }
+  .fade-in-content.delay-2 { animation-delay: 0.6s; }
+  .fade-in-content.delay-3 { animation-delay: 0.9s; }
+  
+/* On hover — brighten and lift slightly */
+.card--techstack img.tech-icon:hover,
+.card--techstack i:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+} 
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+    to {
+      opacity: 0.8;
+      transform: translateY(0);
+    }
+  }
+  
+  
+  .tech-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3em;
+    margin: 0.25em 0.5em;
+    font-size: 0.95em;
+    opacity: 0;
+    transform: translateY(8px);
+    animation: fadeInUp 0.4s ease-out forwards;
+} 
+  .tech-label img.tech-icon {
+    height: 18px;
+    width: auto;
+    max-width: 20px;
+    object-fit: contain;
+    opacity: 0.85;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+  }
+  
+  .tech-label img.tech-icon:hover {
+    opacity: 1;
+    transform: translateY(-2px);
+  }
+  
+  
+  .card--techstack .tech-label:nth-child(1) { animation-delay: 0.05s; }
+  .card--techstack .tech-label:nth-child(2) { animation-delay: 0.1s; }
+  .card--techstack .tech-label:nth-child(3) { animation-delay: 0.15s; }
+  .card--techstack .tech-label:nth-child(4) { animation-delay: 0.2s; }
+  .card--techstack .tech-label:nth-child(5) { animation-delay: 0.25s; }
+  /* ...more if needed */
+  
+  .tech-label:hover {
+    opacity: 1;
+    transform: translateY(-2px);
+  }
+
+  #contact-section {
+    text-align: center;
+  }
+  
+  .contact-info {
+    margin-top: 1em;
+  }
+  
+  .contact-info p {
+    margin-bottom: 0.8em;
+  }
+  
+  .contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+    flex-wrap: wrap;
+  }
+  
+  .contact-links a {
+    font-size: 1em;
+    font-weight: 400;
+    color: var(--mainLinkColor);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .contact-links a:hover {
+    color: var(--mainTextColor);
+    transform: translateY(-2px) scale(1.02);
+  }
+  

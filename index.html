@@ -17,6 +17,7 @@
     <link rel="icon" type="image/png" href="./assets/images/logo3.png" />
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/theme-switcher.css">
 </head>
@@ -38,63 +39,143 @@
         <section class="section--page">
 
             <div id="socials--list">
-                <a href="https://www.linkedin.com/in/david-olaniyan-916326179/" target="_blank">Linkedin</a>
-                <a href="https://github.com/davidatrus" target="_blank">Github</a>
-                <a href="./assets/resume.pdf" target="_blank">Download Resume</a>
+                <a href="https://www.linkedin.com/in/david-olaniyan-916326179/" target="_blank">🔗 Linkedin</a>
+                <a href="https://github.com/davidatrus" target="_blank">🐙 Github</a>
+                <a href="./assets/resume.pdf" target="_blank">📄 Download Resume</a>
             </div>
         </section>
 
         <section class="section--page">
-            <h2>Skills & Qualifications</h2>
+            <h2 class="section--heading section-skills-qualifications">🧠 Skills & Qualifications</h2>
             <ul id="qualifications--list">
-                <li>✅ About 2 years of experience in fullstack development</li>
-                <li>✅ Game Development: Skilled in Unity, implementing various systems using C#</li>
-                <li>✅ Cloud Services and DevOps: Knowledgeable in deploying applications using AWS, Heroku, Docker, and
-                    managing version control with GitHub Actions&Workflows.</li>
-
+                <li>✅ 2 years of experience in full-stack development.</li>
+                <li>✅ Game Development: Skilled in Unity, implementing various systems using C#.</li>
+                <li>✅ Cloud & DevOps: Experienced with AWS, Heroku, Docker, and automating workflows using GitHub Actions.</li>
             </ul>
         </section>
 
         <section class="section--page">
-            <h2>Tech Stack</h2>
-
-            <div id="wrapper--techstack__items">
-                <div class="card--techstack"><span>Python, JavaScript, NodeJS, C#</span></div>
-                <div class="card--techstack"><span>Express</span></div>
-                <div class="card--techstack"><span>React, Vue.js</span></div>
-                <div class="card--techstack"><span>MongoDB, MySQL</span></div>
-                <div class="card--techstack"><span>Github, Docker, AWS, kubectl, Unity</span></div>
+            <h2 class="section--heading section-tech-stack">🧱 Tech Stack</h2>
+            <div id="wrapper--techstack__items" class="fade-in-content delay-2">
+          
+              <div class="card--techstack centered">
+                <span class="tech-label">
+                  <img src="assets/icons/csharp.svg" class="tech-icon" alt="C#" title="C#" />
+                  C#
+                </span>
+                <span class="tech-label">
+                  <img src="assets/icons/cpp.svg" class="tech-icon" alt="C++" title="C++" />
+                  C++
+                </span>
+                <span class="tech-label">
+                  <img src="assets/icons/java.svg" class="tech-icon" alt="Java" title="Java" />
+                  Java
+                </span>
+                <span class="tech-label">
+                  <img src="assets/icons/python.svg" class="tech-icon" alt="Python" title="Python" />
+                  Python
+                </span>
+                <span class="tech-label">
+                  <img src="assets/icons/javascript.svg" class="tech-icon" alt="JavaScript" title="JavaScript" />
+                  JavaScript
+                </span>
+              </div>
+          
+              <div class="card--techstack">
+                <span class="tech-label">
+                  <img src="assets/icons/react.svg" class="tech-icon" alt="React" title="React" />
+                  React
+                </span>
+                <span class="tech-label">
+                  <img src="assets/icons/vue.svg" class="tech-icon" alt="Vue.js" title="Vue.js" />
+                  Vue.js
+                </span>
+                <span class="tech-label">
+                  <img src="assets/icons/nodejs.svg" class="tech-icon" alt="NodeJS" title="NodeJS"/>
+                  NodeJS
+                </span>
+                <span class="tech-label">
+                  <img src="assets/icons/express.svg" class="tech-icon dark-mode-visible" alt="Express" title="Express.js"/>
+                  Express
+                </span>
+              </div>
+          
+              <div class="card--techstack">
+                <span class="tech-label">
+                  <img src="assets/icons/mongodb.svg" class="tech-icon" alt="MongoDB" title="MongoDB" />
+                  MongoDB
+                </span>
+                <span class="tech-label">
+                  <img src="assets/icons/mysql.svg" class="tech-icon" alt="MySQL" title="MySQL"/>
+                  MySQL
+                </span>
+              </div>
+          
+              <div class="card--techstack centered">
+                <span class="tech-label">
+                  <img src="assets/icons/github.svg" class="tech-icon dark-mode-visible" alt="GitHub" title="GitHub" />
+                  GitHub
+                </span>
+                <span class="tech-label">
+                  <img src="assets/icons/docker.svg" class="tech-icon" alt="Docker" title="Docker"/>
+                  Docker
+                </span>
+                <span class="tech-label">
+                  <img src="assets/icons/aws.svg" class="tech-icon dark-mode-visible" alt="AWS" title="AWS"/>
+                  AWS
+                </span>
+                <span class="tech-label">
+                  <img src="assets/icons/kubectl.svg" class="tech-icon" alt="kubectl" title="Kubernetes"/>
+                  kubectl
+                </span>
+                <span class="tech-label">
+                  <img src="assets/icons/unity.svg" class="tech-icon" alt="Unity" title="Unity"/>
+                  Unity
+                </span>
+              </div>
+          
             </div>
-        </section>
+          </section>          
 
         <section id="work-history-wrapper" class="section--page">
-            <h2>Work History</h2>
+            <h2 class="section--heading section-work-history">💼 Work History</h2>
 
-            <div class="card--work-history">
-                <strong>💼 Software Engineer Intern | Synamedia</strong>
-                <p>05/2022 - 08/2023</p>
-                <p>Fulfilled responsibilities while working in a remote environment and effectively collaborated with
-                    engineers in different time zones. Worked in a full- stack development capacity engaging with
-                    front-end, UI design, backend development, and cloud deployment through AWS.</p>
+            <div class="card--work-history fade-in-content delay-1">
+                <strong>🧑‍💻 Software Engineer Intern | Synamedia</strong>
+                <p>May 2022 - August 2023</p>
+                <p>Worked remotely with engineers across multiple time zones in a full-stack development capacity, contributing to UI design, backend APIs, automation, and cloud deployment using AWS.</p>
                 <ul>
-                    <li>Worked on creating automated release notes along with working with GitHub actions to
-                        automatically update our release version</li>
-                    <li>Updated company webpage to track user interaction to help recreate bugs to assist the QA team
-                    </li>
-                    <li>Created a custom Eslint rule along with Github Action to make sure users were alerted to add in
-                        the missing field inside pull requests.</li>
-                    <li>Created Subsystem tests for our Backup & Restore API, along with creating an S3 bucket that
-                        allows simulated device to perform the backup & restore.</li>
+                    <li>Automated the generation of release notes and implemented GitHub Actions to update release versions in CI/CD workflows.</li>
+                    <li>Enhanced the company’s internal webpage to track user interactions, enabling the QA team to reproduce and resolve bugs more efficiently.</li>
+                    <li>Created a custom ESLint rule and GitHub Action to enforce pull request field completion, improving code review quality and consistency.</li>
+                    <li>Developed subsystem tests for the Backup & Restore API and configured an S3 bucket to simulate device backups and restores.</li>
                 </ul>
             </div>
 
         </section>
 
+
         <section class="section--page">
-            <h2>Projects</h2>
+            <h2 class="section--heading section-education">🎓 Education</h2>
+            <div class="fade-in-content delay-2">
+              <div class="card--education">
+                <strong>Bachelor of Engineering Science, Software Engineering (Co-op)</strong>
+                <p>Western University | 2018 – 2024</p>
+                <ul>
+                  <li>Graduated with Co-op Designation.</li>
+                  <li>Top 10 in Canada – Phys@Mac Contest.</li>
+                  <li>Capstone: Traffic Intersection Analysis.</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+
+        <section class="section--page">
+            <h2 class="section--heading section-projects">🚀 Projects</h2>
 
             <div class="card--project">
-                <a href="chat_app.html"><span>💬</span> Built a Real-time Chat Application</a>
+                <a href="chat_app.html"><span>💬</span> Real-Time Chat App</a>
             </div>
 
             <div class="card--project">
@@ -106,21 +187,29 @@
             </div>
 
             <div class="card--project">
-                <a href="connect4.html"><span>🔵🔴</span> Built Connect 4</a>
+                <a href="graphics_project.html"><span>💧</span> Real-Time Water Waves</a>
+            </div>
+
+            <div class="card--project">
+                <a href="connect4.html"><span>🔵🔴</span> Connect 4 Game</a>
             </div>
 
         </section>
 
-        <section id="wrapper--hero" class="section--page">
-            <div>
-                <h2>Contact Me </h2>
-                <h4 id="bio">Please feel free to reach out to me if you require any further information.</h4>
-                <a href="mailto:davidolaniyan8@gmail.com">davidolaniyan8@gmail.com </a>
-                <a href="https://github.com/davidatrus" target="_blank" style="padding-left: 15px;">Github</a>
-                <a href="https://www.linkedin.com/in/david-olaniyan-916326179/" target="_blank"
-                    style="padding-left: 15px;">Linkedin</a>
+        <section class="section--page">
+            <h2 class="section--heading section-contact-me">📬 Contact Me</h2>
+            <div class="fade-in-content delay-3">
+              <h4 id="bio">Please feel free to reach out to me if you require any further information.</h4>
+              <div class="contact-links">
+                <a href="mailto:davidolaniyan8@gmail.com" title="Send me an email">Email Me!</a>
+                <a href="https://github.com/davidatrus" target="_blank">Github</a>
+                <a href="https://www.linkedin.com/in/david-olaniyan-916326179/" target="_blank">Linkedin</a>
+              </div>
             </div>
-        </section>
+          </section>
+          
+          
+          
 
     </div>
     <div id="theme-switcher">

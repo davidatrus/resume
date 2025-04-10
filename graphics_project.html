@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1G92L0R7TN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-1G92L0R7TN');
+    </script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>David Olaniyan</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="./assets/images/logo3.png" />
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/theme-switcher.css">
+</head>
+
+<body>
+    <div id="container--main">
+        <a href="index.html">&#x2190; Go Back</a>
+        <h1>💧 Interactive Water Surface with Real-Time Waves</h1>
+
+        <ul>
+            <li><a href="https://github.com/davidatrus/cs3388_Ass6" target="_blank">Source Code</a></li>
+        </ul>
+
+        <h2>🔹 Project Overview</h2>
+        <p>
+            This project is a real-time water simulation built using C++ and OpenGL as part of my final assignment for CS3388 (Computer Graphics).
+            The simulation leverages advanced rendering techniques such as tessellation shaders, geometry shaders, and displacement maps to bring a dynamic water surface to life.
+        </p>
+        <p>
+            At a high level, the application:
+            <ul>
+                <li>Generates a simple triangle mesh as a base.</li>
+                <li>Uses tessellation to increase mesh detail dynamically.</li>
+                <li>Applies Gerstner wave functions in the geometry shader to simulate realistic wave motion.</li>
+                <li>Implements a Phong-based lighting model with displacement and normal mapping for visual depth and texture.</li>
+                <li>Renders a visually convincing water patch with interactive camera controls and adjustable wave parameters.</li>
+            </ul>
+        </p>
+
+        <h2>🔹 How to Use the Application</h2>
+        <ul>
+            <li><strong>Arrow Keys / WASD</strong> – Move the camera around the water surface.</li>
+            <li><strong>Scroll Wheel / +/- keys</strong> – Zoom in and out.</li>
+            <li><strong>T / G Keys</strong> – Increase or decrease tessellation level.</li>
+            <li><strong>R</strong> – Reset the camera position.</li>
+            <li><strong>ESC</strong> – Exit the application.</li>
+        </ul>
+        <p>
+            💡 <em>You can also experiment with the shader files to modify wave parameters such as speed, direction, and sharpness for custom behavior.</em>
+        </p>
+    </div>
+
+    <div id="theme-switcher">
+        <div class="theme" id="theme-dark" data-theme="dark"></div>
+        <div class="theme" id="theme-light" data-theme="light"></div>
+    </div>
+
+    <script src="js/theme-switcher.js"></script>
+</body>
+
+</html>
