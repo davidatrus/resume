@@ -24,19 +24,36 @@
 <body>
     <div id="container--main">
         <a href="index.html">&#x2190; Go Back</a>
-        <h1>Building Connect 4 Using React</h1>
+        <h1>Connect 4 with AI: Built from Scratch in React</h1>
 
-        <ul>
-            <li><a href="https://667a0906b506a15504b79357--inspiring-fox-28c024.netlify.app/" target="_blank">Live
-                    Demo</a></li>
-            <li><a href="https://github.com/davidatrus/connect4game/tree/main/my-connect-react" target="_blank">Source
-                    code</a></li>
-        </ul>
-        <p>Creating a simple connect 4 game using react.</p>
-        <p> Grab a friend and play each other in connect 4. Press on where you want to place your tile and off you go.
-        </p>
-        <p>Logic to check wins vertically, horizontally and diagonally. Also Added button to reset board</p>
+        <div class="action-links">
+            <a class="btn-demo" href="https://inspiring-fox-28c024.netlify.app" target="_blank">🎮 Try the Live Game</a>
+            <a class="btn-code" href="https://github.com/davidatrus/connect4game" target="_blank">🛠️ View Source Code</a>
+          </div>
+        <h3>✨ Key Features</h3>
+        <p><strong>Connect 4: AI Showdown</strong> is a fully-featured two-player game built using React. Initially a basic project, it's now a polished, animated experience with dynamic AI opponents and visual feedback.</p>
+        <p>You can play against a friend or challenge a computer opponent with 4 distinct AI difficulty levels — including an <strong>Impossible</strong> mode powered by the Minimax algorithm with alpha-beta pruning.</p>
+        <p>The game highlights winning moves, includes a confetti celebration on victory, and adapts its AI behavior based on your selection. It also features animations, improved UI/UX, and a redesigned game mode menu.</p>
+        <p>Whether you’re learning about game theory or just looking for a quick match, give it a shot!</p>
+        <hr />
+<p><em>Developer Note:</em> This was one of my earliest React projects. Rebuilding it from scratch gave me the chance to explore AI algorithms like Minimax, level up my UI/UX skills, and create a genuinely fun user experience. The Impossible AI still beats me sometimes — and I wrote it!</p>
+
+
     </div>
+    <div class="project-screenshots">
+        <div class="screenshot-wrapper fade-in">
+          <img class="screenshot fade-in" src="./assets/images/connect4/Connect4-NewVersion-AIModes.png" alt="Connect 4 Main Menu" />
+          <p class="screenshot-caption">📌 Updated main menu: Choose between multiplayer or 4-tiered AI challenge</p>
+        </div>
+      
+        <div class="screenshot-wrapper fade-in">
+          <img class="screenshot fade-in" src="./assets/images/connect4/ImpossibleModeGame.png" alt="Connect 4 Game Board with Confetti" />
+          <p class="screenshot-caption">🎉 Game in action: AI move highlighted, confetti on win, and full Connect 4 experience</p>
+        </div>
+      </div>
+      
+      
+    
     <div id="theme-switcher">
         <div class="theme" id="theme-dark" data-theme="dark"></div>
         <div class="theme" id="theme-light" data-theme="light"></div>

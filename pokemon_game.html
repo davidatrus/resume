@@ -24,30 +24,39 @@
 <body>
     <div id="container--main">
         <a href="index.html">&#x2190; Go Back</a>
-        <h1>Building Pokemon in Unity</h1>
-
+        <h1>Building Pokémon in Unity</h1>
+      
+        <div class="action-links">
+          <a class="btn-code" href="https://github.com/davidatrus/Pokemon_Game" target="_blank">🛠️ View Source Code</a>
+        </div>
+      
+        <div class="video-wrapper fade-in">
+          <iframe
+            width="100%"
+            height="400"
+            src="https://www.youtube.com/embed/ekZfFT9XC3c"
+            title="Pokémon Unity Game Demo"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      
+        <p class="screenshot-caption">🎮 Watch the gameplay demo — built entirely in Unity!</p>
+      
+        <h3>✨ Key Features</h3>
+        <p>This project is a faithful recreation of classic Pokémon gameplay, fully built from scratch using Unity’s game engine.</p>
+      
         <ul>
-            <li><a href="https://www.youtube.com/watch?v=ekZfFT9XC3c&ab_channel=Davidolaniyan" target="_blank">Live
-                    Demo</a></li>
-            <li><a href="https://github.com/davidatrus/Pokemon_Game" target="_blank">Source code</a></li>
+          <li>Built modular systems for inventory, catching, battling, and party management using <strong>scriptable objects</strong>.</li>
+          <li>Developed a dynamic <strong>quest system</strong> with branching tasks and rewards.</li>
+          <li>Implemented item shop with buy/sell functionality.</li>
+          <li>Added immersive audio via Unity’s <strong>sound management system</strong>.</li>
+          <li>Created a <strong>save/load system</strong> to persist progress across play sessions.</li>
+          <li>Engineered a <strong>custom state machine</strong> (namespace-based) to control Enter, Execute, and Exit logic across multiple gameplay states.</li>
+          <li>Currently implementing a fully-featured <strong>PC box system</strong> for storing additional Pokémon.</li>
         </ul>
-        <p>Recreating pokemon from scratch using unity!</p>
-
-        <p> Built with Unity’s Game engine </p>
-        <ul>
-            <li>Implemented inventory system, catching system, battle system, Pokémon party system all while utilizing
-                scriptable objects in Unity</li>
-            <li>Implemented quest system </li>
-            <li>Implemented buy/sell items system</li>
-            <li>Implemented Sound system.</li>
-            <li>Implemented Save & Load system.</li>
-            <li>Used a state machine to handle logic for different game states, made the statemachine a namespace so I
-                can call in their functions across different files. Enter, Execute and Exit functions that will handle
-                logic for entering a state, exiting a state and executing a state. In the State class theres logic for
-                Pushing and Popping. </li>
-            <li>Currently implementing pokemon box functionality</li>
-        </ul>
-    </div>
+      </div>      
     <div id="theme-switcher">
         <div class="theme" id="theme-dark" data-theme="dark"></div>
         <div class="theme" id="theme-light" data-theme="light"></div>
