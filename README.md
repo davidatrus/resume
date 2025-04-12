@@ -48,10 +48,16 @@ You can download the most recent version of my resume [here](./assets/resume.pdf
 
 ### `April 10, 2025`
 
-- Added **smooth fade-in animations** for section titles and content.
-- Introduced **hover interactions** for titles and tech icons.
-- Reworked the `Contact Me` section layout to maintain visual consistency.
-- Fixed Git sync issues and committed animation refinements.
+- **Animated polish for section transitions and tech icons**  
+  → Added **smooth fade-in animations** for section titles and key content.  
+  → Introduced **hover interactions** for section headings and tech stack icons.
+
+- **Contact section refinement**  
+  → Reworked the layout of the `Contact Me` section for improved alignment and visual clarity.
+
+- **Sync cleanup**  
+  → Resolved Git sync issues and committed final animation refinements.
+
 
 
 ---
