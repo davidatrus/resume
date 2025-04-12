@@ -30,8 +30,10 @@ You can download the most recent version of my resume [here](./assets/resume.pdf
 
 - **Full redesign of the Connect 4 project page**  
   → Showcases the new AI-based version of the game, built entirely in React with 4 difficulty modes and confetti animations.  
-  → Includes embedded screenshots, feature breakdowns, and personal developer notes.
-  → To see the full list of all the exciting changes made to the Connect 4 game, check out the [Connect 4 README](https://github.com/davidatrus/connect4game#readme).
+ → Includes embedded screenshots, feature breakdowns, and personal developer notes.  
+
+👉 **See the full changelog in the [Connect 4 README](https://github.com/davidatrus/connect4game#readme)**.
+
 
 - **Overhauled layout for individual project pages**  
   → Replaced raw hyperlinks with polished **Live Demo** and **Source Code** buttons.  
