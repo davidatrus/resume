@@ -26,6 +26,17 @@ You can download the most recent version of my resume [here](./assets/resume.pdf
 
 ## 📝 Latest Updates
 
+### `April 15, 2025`
+
+- **Major Online Multiplayer Update for Connect 4**  
+  → Fully implemented online play via **Socket.IO** with support for both **public** and **private** game rooms.  
+  → Added synced rematch flow, live player name display, disconnection handling, and public game lobby browsing.  
+  → 🎵 Integrated custom **sound effects**: move clinks, countdown ticks, victory/defeat chimes, and disconnect alerts.  
+  → 🚀 Migrated deployment from Netlify to **Render** to support a full backend (Node + Express).  
+  → 🖼 Added new **lobby screenshot** and version badge to the project page for visual clarity and version tracking.
+
+👉 **See the full changelog in the [Connect 4 README](https://github.com/davidatrus/connect4game#readme)**.
+
 ### `April 12, 2025`
 
 - **Full redesign of the Connect 4 project page**  

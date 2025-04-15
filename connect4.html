@@ -2,63 +2,87 @@
 <html>
 
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1G92L0R7TN"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1G92L0R7TN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-        gtag('config', 'G-1G92L0R7TN');
-    </script>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>David Olaniyan</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" href="./assets/images/logo3.png" />
-    <link rel="stylesheet" href="./styles/main.css">
-    <link rel="stylesheet" href="./styles/theme-switcher.css">
+    gtag('config', 'G-1G92L0R7TN');
+  </script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>David Olaniyan</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="./assets/images/logo3.png" />
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="./styles/theme-switcher.css">
 </head>
 
 <body>
-    <div id="container--main">
-        <a href="index.html">&#x2190; Go Back</a>
-        <h1>Connect 4 with AI: Built from Scratch in React</h1>
+  <div id="container--main">
+    <a href="index.html">&#x2190; Go Back</a>
+    <h1>Connect 4 with AI & Online Multiplayer
+      <span class="version-badge">🏷 v2.0</span>
+    </h1>
 
-        <div class="action-links">
-            <a class="btn-demo" href="https://inspiring-fox-28c024.netlify.app" target="_blank">🎮 Try the Live Game</a>
-            <a class="btn-code" href="https://github.com/davidatrus/connect4game" target="_blank">🛠️ View Source Code</a>
-          </div>
-        <h3>✨ Key Features</h3>
-        <p><strong>Connect 4: AI Showdown</strong> is a fully-featured two-player game built using React. Initially a basic project, it's now a polished, animated experience with dynamic AI opponents and visual feedback.</p>
-        <p>You can play against a friend or challenge a computer opponent with 4 distinct AI difficulty levels — including an <strong>Impossible</strong> mode powered by the Minimax algorithm with alpha-beta pruning.</p>
-        <p>The game highlights winning moves, includes a confetti celebration on victory, and adapts its AI behavior based on your selection. It also features animations, improved UI/UX, and a redesigned game mode menu.</p>
-        <p>Whether you’re learning about game theory or just looking for a quick match, give it a shot!</p>
-        <hr />
-<p><em>Developer Note:</em> This was one of my earliest React projects. Rebuilding it from scratch gave me the chance to explore AI algorithms like Minimax, level up my UI/UX skills, and create a genuinely fun user experience. The Impossible AI still beats me sometimes — and I wrote it!</p>
-
-
+    <div class="action-links">
+      <a class="btn-demo" href="https://connect4game-qrdx.onrender.com/" target="_blank">🎮 Try the Live Game</a>
+      <a class="btn-code" href="https://github.com/davidatrus/connect4game" target="_blank">🛠️ View Source Code</a>
     </div>
-    <div class="project-screenshots">
-        <div class="screenshot-wrapper fade-in">
-          <img class="screenshot fade-in" src="./assets/images/connect4/Connect4-NewVersion-AIModes.png" alt="Connect 4 Main Menu" />
-          <p class="screenshot-caption">📌 Updated main menu: Choose between multiplayer or 4-tiered AI challenge</p>
-        </div>
-      
-        <div class="screenshot-wrapper fade-in">
-          <img class="screenshot fade-in" src="./assets/images/connect4/ImpossibleModeGame.png" alt="Connect 4 Game Board with Confetti" />
-          <p class="screenshot-caption">🎉 Game in action: AI move highlighted, confetti on win, and full Connect 4 experience</p>
-        </div>
-      </div>
-      
-      
+    <h3>✨ Key Features</h3>
+    <p><strong>Connect 4: AI Showdown</strong> is a fully-featured two-player game built using React and Node.js.
+      Originally a local-only project, it's grown into a polished, real-time multiplayer experience with dynamic AI and
+      engaging visuals.</p>
+
+    <p>You can play against a friend in real time through online multiplayer, choosing to host a <strong>private
+        room</strong> with a code or a <strong>public room</strong> that others can join from the lobby. It’s powered by
+      a live Node.js backend using <strong>Socket.IO</strong>.</p>
+
+    <p>Prefer solo play? Challenge a computer opponent with 4 distinct AI difficulty levels — including an
+      <strong>Impossible</strong> mode powered by the Minimax algorithm with alpha-beta pruning.</p>
+
+    <p>The game highlights winning moves, plays sound effects, includes a confetti celebration on victory, and adapts
+      its AI behavior based on your difficulty selection. It also features animations, rematch logic, a polished UI/UX,
+      and a responsive design for play on any screen size.</p>
+
+    <p>Whether you’re learning about game theory or just looking for a quick match, give it a shot!</p>
+
+    <hr />
+    <p><em>Developer Note:</em> This was one of my earliest React projects. Rebuilding it from scratch let me dive deeper into AI algorithms, real-time multiplayer architecture, and UI/UX design. The Impossible AI still beats me sometimes — and I wrote it! 😅!</p>
+
+
+  </div>
+  <div class="project-screenshots">
+    <div class="screenshot-wrapper fade-in">
+      <img class="screenshot fade-in" src="./assets/images/connect4/Connect4-NewVersion-AIModes.png"
+        alt="Connect 4 Main Menu" />
+      <p class="screenshot-caption">📌 Updated main menu: Choose between multiplayer or 4-tiered AI challenge</p>
+    </div>
+
+    <div class="screenshot-wrapper fade-in">
+      <img class="screenshot fade-in" src="./assets/images/connect4/PublicGameLobby.png" alt="Public Games Lobby Screenshot" />
+      <p class="screenshot-caption">🌐 Public Games Lobby: Browse and join any open room hosted by other players</p>
+    </div>
     
-    <div id="theme-switcher">
-        <div class="theme" id="theme-dark" data-theme="dark"></div>
-        <div class="theme" id="theme-light" data-theme="light"></div>
+
+    <div class="screenshot-wrapper fade-in">
+      <img class="screenshot fade-in" src="./assets/images/connect4/ImpossibleModeGame.png"
+        alt="Connect 4 Game Board with Confetti" />
+      <p class="screenshot-caption">🎉 Game in action: AI move highlighted, confetti on win, and full Connect 4
+        experience</p>
     </div>
-    <script src="js/theme-switcher.js"></script>
+  </div>
+
+
+
+  <div id="theme-switcher">
+    <div class="theme" id="theme-dark" data-theme="dark"></div>
+    <div class="theme" id="theme-light" data-theme="light"></div>
+  </div>
+  <script src="js/theme-switcher.js"></script>
 </body>
 </body>
 
