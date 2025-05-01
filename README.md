@@ -26,6 +26,22 @@ You can download the most recent version of my resume [here](./assets/resume.pdf
 
 ## 📝 Latest Updates
 
+### 🛠 April 29, 2025
+
+> 📄 **Full changelog in the [Connect 4 README](https://github.com/davidatrus/connect4game#readme)**.
+
+- **New Online feature updates for Connect 4**
+  - 🎯 Spectator Mode now live!
+  - 🔊 Countdown sound fix
+  - 🏆 Highlight Winning Moves
+  - 🎮 New Game board legend for player and spectator
+  - 🪪 Name modal refinements
+  - 🧹 Room cleanup improvements
+  - 🐛 ESLint and UI bugs fixed
+
+
+---
+
 ### `April 15, 2025`
 
 - **Major Online Multiplayer Update for Connect 4**  
